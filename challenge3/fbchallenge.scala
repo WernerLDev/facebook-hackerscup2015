@@ -154,6 +154,7 @@ object Main {
                 
             val maze = Maze(vector)
             val solver = Solver(maze)
+            val solution = solver.solutions.head
             println("Solution found in " + solution._2 + " steps")
             val t2 = System.currentTimeMillis
             println("Executiontime: " + (t2-t1) + " msecs")
